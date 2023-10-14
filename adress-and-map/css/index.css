@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+.header{
+    margin-bottom: 80px;
+}
+.container__Informatiounen{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    margin: 0 40px;
+}
+[type="submit"]{
+    border: none;
+}
+.container-map{
+    height: 100%;
+    width: 50%;
+    flex:  1;
+    margin-left: 40px;
+}
+#map{
+    width: 100%;
+    height: 100%;
+}
+.Adress__Informatiounen{
+    flex:0.6;
+    margin-right: 36px;
+}
+.icon-left-back{
+    font-size: 1.4rem;
+    
+}
+.nav-btn-back{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-left: 4px;
+    display: inline;
+    color: #000;
+    text-decoration: none;
+}
+.Informatiounen{
+    margin: 0 30px;
+}
+.container__nav__back{
+    cursor: pointer;    
+    padding: 12px 20px;
+    display: block;
+}
+
+.nav-btn-back:hover{
+    text-decoration: underline;    
+}
+
+.contact_Information{
+    display: flex;
+    margin-bottom: 24px;
+}
+[type="ul,ol"],ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.icons__Information{
+    min-height: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:  35px;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    border: 1px solid black;
+}
+.list__item__Informatiounen{
+    margin-bottom: 24px;
+}
+.Adress__Informatiounen .list__item__Informatiounen:last-child{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+[type="button"]{
+    border: 0;
+}
+.form-btn-submit{
+    background: linear-gradient(to right, rgb(232, 232, 73), orange);
+    font-size: 1.4rem;
+    
+}
+.container-enter__information{
+    margin-top: 20px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.conten__des__Information{
+    font-size: 1.6rem;
+}
+
+.enter-information{
+    height: 45px;
+    padding: 0 20px;
+    color: #000;
+    width: 500px;
+    font-family: "Quicksand",sans-serif;
+    border-radius: 30px !important;
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    display: block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+.enter-information-conten{
+    min-height: 130px;
+    padding: 10px 15px;    
+    resize: none;
+    width: 500px;
+    vertical-align: top;
+}
+.enter-information:focus {
+    outline: none;
+}
+.form-btn-submit{
+    padding: 8px 32px;
+    box-sizing: content-box;
+    border-radius: 24px;
+    width: fit-content;
+    margin: auto;
+}
+.line-height{
+    line-height: 45px;
+    margin-bottom: 28px;
+}
+@media screen and (min-width:500px) and (max-width:700px){
+    .container-map{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin:32px 0 0;
+    }
+    .enter-information{
+        width: 80%;
+    }
+    .Informatiounen{
+        margin: 20px 2%;
+        width: 100%;
+    }
+    #map{
+        position: static;
+        right: 0;
+        left: 0;
+    }
+}
+@media screen and (min-width:700px) and (max-width:1200px){
+    .container-map{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin:32px 0 0;
+    }
+    .enter-information{
+        width: 80%;
+    }
+    .container__Informatiounen{
+        display: block;
+    }
+    .Informatiounen{
+        margin: 60px 2%;
+        width: 500px;
+        
+    }
+    #map{
+        position: static;
+        right: 0;
+        left: 0;
+    }
+}
+@media screen and (max-width:500px) {
+    .container-map{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin:32px 0 0;
+    }
+    .enter-information{
+        width: 80%;
+    }
+    .Informatiounen{
+        margin: 20px 2%;
+        width: 500px;
+    }
+    #map{
+        position: static;
+        width: 100vh;
+        right: 0;
+        left: 0;
+    }
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="D:\WorkSpace-project\bootstrap-5.3.0-dist\css\bootstrap.css" class="">
+    <script src="https://kit.fontawesome.com/3ebc92194d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="D:\WorkSpace-project\Project\adress-and-map\css\index.css" class="">
+    
+</head>
+<body>
+    <div class="header" ng-controller="myController">
+        <span class="container__nav__back"><i class="fa-solid fa-chevron-left icon-left-back"></i><a href="#" class="nav-btn-back">Back</a></span>
+    </div>
+        <div class="container__Informatiounen">
+            <div class="Informatiounen">
+            <ul class="Adress__Informatiounen" type="ul,ol">
+                <li class="list__item__Informatiounen">
+                    <i class="fa-solid fa-location-dot icons__Information"></i>
+                    <span class="conten__des__Information">39 Đ. Lê Văn Lương, Thanh Xuân, Hà Nội, Vietnam</span>
+                </li>
+                <li class="list__item__Informatiounen">
+                    <i class="fa-solid fa-mobile-screen-button icons__Information"></i>
+                    <span class="conten__des__Information">9728142521</span>
+                </li>
+                <li class="list__item__Informatiounen">
+            <i class="fa-solid fa-envelope icons__Information"></i>
+            <span class="conten__des__Information ">team4@gmail.com</span>
+            </li>
+        </ul>
+        <h3 class="">Liên hệ với chúng tôi</h3>
+        <div class="">
+            <form action="" class="form-information" method="get">
+                <input type="text" ng-model="fullName"  ng-show="isElementVisibleName" pattern="/^[a-z0-9]+$/" required class="enter-information" placeholder="Full Name">
+                <input type="email" ng-model="email" ng-show="isElementVisible" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required class="enter-information" placeholder="Email">
+                <textarea ng-model="content" placeholder="Content" class="enter-information enter-information-conten"></textarea>
+                <input type="submit" class="btn btn-primary form-btn-submit" ng-click="submitForm()"></input>
+            </form>
+            </div>
+        </div>
+<div class="container-map">
+    <div id="map" >
+        
+    </div>
+</div>
+</div>
+
+</body>
+<script src="D:\WorkSpace-project\Project\adress-and-map\js\index.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+<script>
+
+</script>
+</html>
